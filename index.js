@@ -1,4 +1,4 @@
-const FunctionSha1 = require('./functionSh1')
+const FunctionSha1 = require('./functionSha')
 this.fungsi = new FunctionSha1()
 
 // Contoh penggunaan
@@ -8,4 +8,7 @@ const inputString = `Kisah mukjizat oleh Nabi Muhammad ini terjadi saat kaum kaf
 
 Membelah bulan ini tentu hanya salah satu dari banyaknya mukjizat dari Nabi Muhammad atas kebesaran Allah.`
 const sha1 = this.fungsi.sha1(inputString)
-console.log('SHA-256 Hash:', sha1)
+console.log('SHA-1 Hash:', sha1)
+console.log(`---------------------------`)
+const sha2 = this.fungsi.sha256(inputString)
+console.log('SHA-256 Hash:', sha2)
